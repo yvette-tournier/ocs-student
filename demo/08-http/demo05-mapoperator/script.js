@@ -1,8 +1,6 @@
 let demoInput = document.querySelector('#demo')
 let obs = Rx.Observable.fromEvent(demoInput, 'input')
-  .map(e = > e.target.value
-)
-.
+  .map(e => e.target.value).
 map(v = > {
   return {
     value: v,

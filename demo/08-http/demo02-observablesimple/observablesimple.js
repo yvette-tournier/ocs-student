@@ -8,9 +8,7 @@ console.clear();
 class DataSource {
   constructor() {
     let i = 0;
-    this._id = setInterval(() = > this.emit(i++), 1000
-  )
-    ;
+    this._id = setInterval(() => this.emit(i++), 1000);
   }
 
   emit(n) {
@@ -36,21 +34,12 @@ class DataSource {
  */
 function myObservable(observer) {
   let datasource = new DataSource();
-  datasource.ondata = (e) =
->
-  observer.next(e);
-  datasource.onerror = (err) =
->
-  observer.error(err);
-  datasource.oncomplete = () =
->
-  observer.complete();
-  return () =
->
-  {
+  datasource.ondata = (e) = observer.next(e);
+  datasource.onerror = (err) = observer.error(err);
+  datasource.oncomplete = () = observer.complete();
+  return () = {
     datasource.destroy();
-  }
-  ;
+};
 }
 
 /**
