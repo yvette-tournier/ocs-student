@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+<body>
+
+<div ng-app="httpApp" ng-controller="httpController">
+
+    <h1>Simple Promise</h1>
+
+    Status {{status}}
+
+    <script>
+      var app = angular.module('httpApp', []);
+      app.controller('httpController', function ($scope, $http) {
+        var promise = $http.get("citylist.html");
+        promise.success(function () {
+          $scope.status = "Success";
+          alert("Success");
+        });
+        promise.error(function () {
+          $scope.status = "Failure";
+          alert("Failure");
+        });
+      });
+    </script>
+
+</body>
+</html>

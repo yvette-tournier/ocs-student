@@ -1,0 +1,13 @@
+<div>
+    <h2>Two way binding Example</h2>
+    Enter you Name: <input [(ngModel)]="enterName"/>
+    <br/><br/>
+    <span> WelCome {{enterName}} ! </span>
+</div>
+
+<div>
+    <h2>Two way binding (without ngModel directive) Example</h2>
+    Enter you Name: <input #txtName type="text" (keyup)="0"/>
+    <br/><br/>
+    <span> WelCome {{txtName.value}} ! </span>
+</div>

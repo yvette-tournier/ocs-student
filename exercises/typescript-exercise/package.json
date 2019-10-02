@@ -1,0 +1,32 @@
+{
+  "name": "learn-typescript",
+  "version": "1.0.0",
+  "description": "TypeScript training",
+  "main": "index.js",
+  "scripts": {
+    "1-types": "mocha -r ts-node/register 1-types.spec.ts",
+    "2-functions": "mocha -r ts-node/register 2-functions.spec.ts",
+    "3-classes": "mocha -r ts-node/register 3-classes.spec.ts"
+  },
+  "engines": {
+    "node": ">=8"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bitovi/learn-typescript.git"
+  },
+  "keywords": [
+    "TypeScript"
+  ],
+  "author": "Jan Toebes",
+  "license": "MIT",
+  "dependencies": {
+    "@types/mocha": "^5.2.5",
+    "@types/node": "^10.12.20",
+    "copy": "^0.3.2",
+    "mocha": "^5.2.0",
+    "semver": "^6.2.0",
+    "ts-node": "^8.0.2",
+    "typescript": "^3.2.4"
+  }
+}

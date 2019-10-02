@@ -1,0 +1,6 @@
+<div>
+    Parent Num: {{ num }}<br>
+    Parent Count: {{ parentCount }}
+    <app-counter [count]="num" (resultChanged)="ngOnChange($event)">
+    </app-counter>
+</div>
