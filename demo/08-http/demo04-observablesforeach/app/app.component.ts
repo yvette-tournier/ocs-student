@@ -42,8 +42,6 @@ export class MyApp {
             this.status = "Started";
         });
 
-        this.data
-            .subscribe(v => this.values.push(v))
-            .then(() => this.status = "Ended");
+        this.data.subscribe(v => this.values.push(v))
     }
 }
