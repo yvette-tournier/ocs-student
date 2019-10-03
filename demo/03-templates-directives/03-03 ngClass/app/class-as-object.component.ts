@@ -28,7 +28,7 @@ import {Component} from '@angular/core';
   `]
 })
 export class ClassAsObjectComponent {
-    flat: boolean = false;
+    flat = "";
 
     calculateddark: boolean = false;
 }

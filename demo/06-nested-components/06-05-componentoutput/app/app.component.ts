@@ -5,7 +5,6 @@ import {Component, OnChange} from '@angular/core';
     templateUrl: 'app/app.component.html'
 })
 export class AppComponent implements OnChange {
-    num = 1;
     parentCount = 0;
 
     ngOnChange(val: number) {

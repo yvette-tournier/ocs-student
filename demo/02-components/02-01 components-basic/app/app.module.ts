@@ -10,7 +10,6 @@ import {HelloComponent} from './hello.component';
         AppComponent,
         HelloComponent
     ],
-    exports: [AppComponent],
     bootstrap: [AppComponent]
 })
 export class AppModule {

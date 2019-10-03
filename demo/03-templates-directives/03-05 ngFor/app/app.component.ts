@@ -3,19 +3,9 @@ import {Component} from '@angular/core';
 @Component({
     selector: 'app-root',
     template: `
-    <app-for-example *ngFor="let episode of episodes" [episode]="episode">
+    <div *ngFor="let episode of episodes">
       {{episode.title}}
-    </app-for-example>
-        
-    <hr>
-    
-    <h2>Desugared</h2>
-    
-    <template ngFor [ngForOf]="episodes" let-episode>
-      <app-for-example [episode]="episode">
-        {{episode.title}}
-      </app-for-example>
-    </template>
+    </div>
   `
 })
 export class AppComponent {
