@@ -1,16 +1,16 @@
-let isLoading: boolean = true;
-isLoading = 'false';
+let isLoading: boolean;
+isLoading = false;
 
-let inventory: Array<number> = [];
+let inventory: Array<string> = [];
 
 inventory.push('tacos', 'hamburgers');
 
 function greet(name: string, age: number): string {
-  return `${name} is ${age} years young.`;
+    return `${name} is ${age} years young.`;
 }
 
-export const jessica = greet(30, 'Jessica')
+export const jessica = greet('Jessica', 30)
 
-export const tom = greet('Tom', 42, 'software');
+export const tom = greet('Tom', 42);
 
 export {isLoading, inventory};

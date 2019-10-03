@@ -15,7 +15,7 @@ describe('Types: Exercise 1: Fix errors', () => {
 
 		assert.equal(jessica,
 			`Jessica is 30 years young.`,
-			"jessica");
+			"Jessica");
 
 		assert.equal(tom,
 			`Tom is 42 years young.`,

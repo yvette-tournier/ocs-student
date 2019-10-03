@@ -48,5 +48,15 @@
         "price": 1350,
         "starRating": 4.6,
         "imageUrl": "https://openclipart.org/image/300px/svg_to_png/257018/Groovy-Peace-Sign-Butterfly-2.png"
+    },
+    {
+        "productId": 6,
+        "productName": "Java Programming",
+        "productCode": "JAV100",
+        "releaseDate": "January 18, 2017",
+        "description": "Learn how to program in Java",
+        "price": 2100,
+        "starRating": 4.5,
+        "imageUrl": "https://openclipart.org/image/300px/svg_to_png/86059/1285037485.png"
     }
 ]
