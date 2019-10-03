@@ -6,7 +6,7 @@ import ComponentAux from './component-aux';
 export const routes: Routes = [
     {path: '', redirectTo: 'component-one', pathMatch: 'full'},
     {path: 'component-one', component: ComponentOne},
-    {path: 'component-two', component: ComponentTwo}
+    {path: 'component-two', component: ComponentTwo},
     {path: 'component-aux', component: ComponentAux, outlet: 'sidebar'}
 ];
 
